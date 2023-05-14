@@ -1,0 +1,122 @@
+teacher:
+  teacher_model: './wavlm_base.pt'
+  mask_length: 10
+  mask_prob: 0.8
+  mask_selection: 'uniform'
+  mask_other: 0.0
+  no_mask_overlap: True
+  mask_min_space: 1
+
+train:
+  base_dir: './'
+  output_dir: 'ArmwavLM-S-960h' 
+  checkpoint: 
+  num_epochs: 100
+  gpus: 2
+  batch_size: 18
+  accumulate_grad_batches: 4
+  use_fp16: True
+  use_apex: False 
+  monitor_losses: True
+  rec_loss_weight: 1.0
+  rec_loss_type: mse
+  distil_random_layer: 11
+  random_layer_weight: 0.1
+  delete_projections: False
+  specaug: False
+  mask_prob_schedule: ""
+
+distiller:
+  # Extractor
+  extractor_mode: default
+  conv_feature_layers: '[(128, 10, 5)] + [(256, 1, 1)] + [(256, 3, 2)] * 4 + [(432, 1, 1)] + [(432, 2, 2)] * 2'
+  feature_grad_mult: 1.0
+  conv_bias: False
+
+  # Convolutional relative positional encoding
+  conv_pos: 128
+  conv_pos_groups: 16
+  pos_conv_depth: 1
+  max_positions: 100000
+
+  # Transformer encoder
+  layer_type: transformer
+  encoder_layers: 12
+  encoder_embed_dim: 432
+  encoder_ffn_embed_dim: 816
+  encoder_attention_heads: 12
+  activation_fn: gelu
+  layer_norm_first: False
+  layer_grad_scale: True
+
+  # conformer
+  depthwise_conv_kernel_size: 31
+  attn_type: ''
+  pos_enc_type: abs
+  fp16: True
+  reuse_pattern: "[True, False, True, False, True, False, True, False, True, False, True, False]"
+
+  # Dropout
+  dropout: 0.1
+  attention_dropout: 0.1
+  activation_dropout: 0.1
+  encoder_layerdrop: 0.0
+  dropout_input: 0.05
+
+  # Output
+  final_dim: 256
+  pred_head_final_dim: 768
+  pred_head_inter_dim: 0
+
+  # Task & loss
+  layerwise_proj: True
+  pred_layer_id: '[11]'
+
+  # Initialization
+  init_conv_layers: False
+  init_encoder_layers: 0
+
+  # Time-reduction layer
+  enable_tr_layer: False
+  tr_conv1d_kernel: 2
+  tr_layer_index: 0
+  tr_reduce_factor: 2
+  tr_layer_type: conv1d
+  
+  # Other
+  checkpoint_activations: False
+  required_seq_len_multiple: 1
+  crop_seq_to_multiple: 1
+
+  # Masking
+  freeze_student_mask: False
+  update_teacher_mask: False
+
+optimizer:
+  name: AdamW_with_schedule
+  lr: 5.e-3
+  warmup_proportion: 0.05
+  betas: [0.9, 0.98]
+  eps: 1.e-6
+  weight_decay: 1.e-6
+  
+data:
+  bucketing_path: './data/len_for_bucket'
+  libri_root: '/db/LibriSpeech'
+  train_set: ['train-clean-100', 'train-clean-360', 'train-other-500']
+  test_set: ['test-clean']
+
+specaug:
+  adaptive: false
+  adaptive_number_ratio: 0.04
+  adaptive_size_ratio: 0.04
+  max_n_time_masks: 20
+  apply_time_warp: false
+  apply_time_mask: true
+  apply_freq_mask: true
+  replace_with_zero: false
+  time_warp_window: 5
+  time_mask_width_range: [0, 100]
+  freq_mask_width_range: [0, 27]
+  num_freq_mask: 2
+  num_time_mask: 2

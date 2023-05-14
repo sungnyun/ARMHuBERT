@@ -1,0 +1,16 @@
+torch==1.11.0
+torchvision==0.12.0
+torchaudio==0.11.0
+pytorch-lightning==1.7.7
+
+numpy<=1.23.5
+fairseq
+s3prl
+mkl
+pyyaml
+pandas
+wandb
+torchsummaryX
+torchinfo
+tensorboard
+tensorboardX

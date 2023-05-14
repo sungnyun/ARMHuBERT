@@ -1,0 +1,10 @@
+db/
+__pycache__/
+results/
+wandb/
+
+*.flac
+*.pt
+lightning_logs/
+run_s3prl.sh
+ft
