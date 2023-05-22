@@ -1,5 +1,5 @@
 # Recycle-and-Distill (Interspeech 2023)
-[arXiv]("~") | [BibTeX](#bibtex)
+[arXiv](https://arxiv.org/abs/2305.11685) | [BibTeX](#bibtex)
 
 ![ARMHuBERT-figure](https://github.com/sausage-333/SSL-Distillation/assets/54805233/2fca535e-014e-40c0-81b9-6d7dd22fc19a)
 
@@ -111,7 +111,14 @@ For our checkpoints, check this [link](https://kaistackr-my.sharepoint.com/:f:/g
 
 ## BibTeX
 If you find this repo useful for your research, please consider citing our paper:
-
+```
+@article{jang2023recycleanddistill,
+         title={Recycle-and-Distill: Universal Compression Strategy for Transformer-based Speech SSL Models with Attention Map Reusing and Masking Distillation}, 
+         author={Kangwook Jang and Sungnyun Kim and Se-Young Yun and Hoirin Kim},
+	 journal={arXiv preprint arXiv:2305.11685},
+         year={2023}
+}
+```
 
 ## Contact
 - Kangwook Jang: dnrrkdwkd12@kaist.ac.kr
