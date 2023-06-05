@@ -1,10 +1,12 @@
 # Recycle-and-Distill (Interspeech 2023)
 [arXiv](https://arxiv.org/abs/2305.11685) | [BibTeX](#bibtex)
 
-![ARMHuBERT-figure](https://github.com/sausage-333/SSL-Distillation/assets/54805233/2fca535e-014e-40c0-81b9-6d7dd22fc19a)
+<p align="center">
+<img width="1400" alt="model" src="./assets/model.png">
+</p>
 
 [**Recycle-and-Distill: Universal Compression Strategy for Transformer-based
-Speech SSL Models with Attention Map Reusing and Masking Distillation**]("~"), INTERSPEECH 2023.
+Speech SSL Models with Attention Map Reusing and Masking Distillation**](https://arxiv.org/abs/2305.11685), INTERSPEECH 2023.
 
 [Kangwook Jang](https://github.com/sausage-333)\*,
 [Sungnyun Kim](https://github.com/sungnyun)\*,
@@ -89,7 +91,9 @@ After training, the model checkpoints and the corresponding configuration file w
 
 ## Result
 
-![ARMHuBERT-results](https://github.com/sausage-333/SSL-Distillation/assets/54805233/5c76394c-82d0-4515-afd1-8dd4c022a793)
+<p align="center">
+<img width="1400" alt="result" src="./assets/result.png">
+</p>
 
 We evaluate our student models on the SUPERB benchmark.
 
