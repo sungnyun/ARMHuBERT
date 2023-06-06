@@ -9,7 +9,7 @@
 Speech SSL Models with Attention Map Reusing and Masking Distillation**](https://arxiv.org/abs/2305.11685), INTERSPEECH 2023.
 
 [Kangwook Jang](https://github.com/sausage-333)\*,
-[Sungnyun Kim](https://github.com/sungnyun)\*,
+[Sungnyun Kim](https://bit.ly/sungnyunkim)\*,
 [Se-Young Yun](https://fbsqkd.github.io), [Hoirin Kim](https://scholar.google.com/citations?user=naLHjOsAAAAJ&hl=en)<br/>
 \* equal contribution
 
