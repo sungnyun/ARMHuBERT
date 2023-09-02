@@ -1,4 +1,4 @@
-# Recycle-and-Distill (Interspeech 2023)
+# ♽ Recycle-and-Distill (Interspeech 2023)
 [arXiv](https://arxiv.org/abs/2305.11685) | [BibTeX](#bibtex)
 
 <p align="center">
@@ -18,6 +18,21 @@ Speech SSL Models with Attention Map Reusing and Masking Distillation**](https:/
 - Parameters and MACs of ARMHuBERT have decreased to **28% and 30%** of the teacher, HuBERT Base, respectively.
 - ARMHuBERT achieves **PER of 7.72%, WER of 9.96%** on the SUPERB benchmark in an E2E distillation manner.
 
+
+### ✅ Checkpoints
+For our model's checkpoints, go check this [link](https://kaistackr-my.sharepoint.com/:f:/g/personal/dnrrkdwkd12_kaist_ac_kr/EpL0YsQg__RJlmsq__Y4UZIBtXuORYXLyAhUX3bK69e8DA?e=EAIEWP)!
+
+| Model name       | Parameters | Teacher | Training dataset |
+|------------------|------------|---------|------------------|
+| ARMHuBERT-S-100h | 22.39M     | HuBERT  | LibriSpeech-100h |
+| ARMwavLM-S-100h  | 22.39M     | wavLM   | LibriSpeech-100h |
+| ARMHuBERT-S-960h | 22.39M     | HuBERT  | LibriSpeech-960h |
+| ARMwavLM-S-960h  | 22.39M     | wavLM   | LibriSpeech-960h |
+| MaskHuBERT-960h  | 26.64M     | HuBERT  | LibriSpeech-960h |
+| ARMHuBERT-960h   | 26.45M     | HuBERT  | LibriSpeech-960h |
+
+
+# How to use this repo
 
 ## Requirements
 Install the necessary packages with: 
@@ -57,11 +72,13 @@ After training, the model checkpoints and the corresponding configuration file w
 
 
 ## Fine-tuning
-1. Clone and install the [S3PRL toolkit](https://github.com/s3prl/s3prl) with ```pip install -e ".[all]"``` (dev mode).
+0. If you don't feel like training your model, feel free to use our [checkpoints](https://kaistackr-my.sharepoint.com/:f:/g/personal/dnrrkdwkd12_kaist_ac_kr/EpL0YsQg__RJlmsq__Y4UZIBtXuORYXLyAhUX3bK69e8DA?e=EAIEWP).
+   
+2. Clone and install the [S3PRL toolkit](https://github.com/s3prl/s3prl) with ```pip install -e ".[all]"``` (dev mode).
 
-2. Copy the entire `./models/[model_name]` folder into `<s3prl root>/s3prl/upstream/`.
+3. Copy the entire `./models/[model_name]` folder into `<s3prl root>/s3prl/upstream/`.
 
-3. Please add upstream importing line in `<s3prl root>/s3prl/hub.py`.
+4. Please add upstream importing line in `<s3prl root>/s3prl/hub.py`.
 	
 	```
 	from s3prl.upstream.[model_name].hubconf import *
@@ -71,11 +88,11 @@ After training, the model checkpoints and the corresponding configuration file w
 	from s3prl.upstream.armhubert.hubconf import *
 	```
 
-4. Please change each config file of s3prl downstream tasks as follows.
+5. Please change each config file of s3prl downstream tasks as follows.
 	+ Uncomment learning rate scheduler
 	+ Learning rate scaled to 10x in spekaer identification (SID) task
 
-5. Run the following command to fine-tune the ARMHuBERT model.
+6. Run the following command to fine-tune the ARMHuBERT model.
 
 	For automatic speech recognition (ASR) as an example:
 	```
@@ -110,8 +127,6 @@ You can also check that our model works on other Transformer backbone model, [wa
 We have only performed evaluation on HuBERT-based models, but this strategy can be performed identically on any speech model with a Transformer backbone. E.g. [AST](https://arxiv.org/abs/2104.01778) (Audio Spectrogram Transformer).
 
 
-## Checkpoint
-For our checkpoints, check this [link](https://kaistackr-my.sharepoint.com/:f:/g/personal/dnrrkdwkd12_kaist_ac_kr/EpL0YsQg__RJlmsq__Y4UZIBtXuORYXLyAhUX3bK69e8DA?e=EAIEWP)!
 
 ## BibTeX
 If you find this repo useful for your research, please consider citing our paper:
