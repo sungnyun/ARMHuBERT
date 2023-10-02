@@ -30,12 +30,13 @@ For our model's checkpoints, go check this [link](https://huggingface.co/sungnyu
 
 | Model name       | Parameters | Teacher | Training dataset | Link |
 |------------------|------------|---------|------------------| ---- |
+| ARMHuBERT-960h   | 26.45M     | HuBERT  | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMHuBERT-960h.ckpt) |
 | ARMHuBERT-S-100h | 22.39M     | HuBERT  | LibriSpeech-100h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMHuBERT-S-100h.ckpt) |
-| ARMwavLM-S-100h  | 22.39M     | wavLM   | LibriSpeech-100h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMwavLM-S-100h.ckpt) |
 | ARMHuBERT-S-960h | 22.39M     | HuBERT  | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMHuBERT-S-960h.ckpt) |
+| ARMwavLM-S-100h  | 22.39M     | wavLM   | LibriSpeech-100h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMwavLM-S-100h.ckpt) |
 | ARMwavLM-S-960h  | 22.39M     | wavLM   | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMwavLM-S-960h.ckpt) |
 | MaskHuBERT-960h  | 26.64M     | HuBERT  | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/MaskHuBERT-960h.ckpt) |
-| ARMHuBERT-960h   | 26.45M     | HuBERT  | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMHuBERT-960h.ckpt) |
+
 
 <br>
 
