@@ -1,5 +1,10 @@
 # ♽ Recycle-and-Distill (Interspeech 2023)
-[arXiv](https://arxiv.org/abs/2305.11685) | [BibTeX](#bibtex)
+
+<a href='https://arxiv.org/abs/2305.11685'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>  <a href=#bibtex><img src='https://img.shields.io/badge/Paper-BibTex-Green'></a> 
+<a href='https://superbbenchmark.org/leaderboard'><img src='https://img.shields.io/badge/SUPERB-Leaderboard-yellow'></a>
+<a href='https://huggingface.co/sungnyun/ARMHuBERT'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ARMHuBERT_Model-blue'></a> <a href='https://huggingface.co/sungnyun/ARMHuBERT'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ARMwavLM_Model-blue'></a>
+
+<br>
 
 <p align="center">
 <img width="1400" alt="model" src="./assets/model.png">
@@ -17,20 +22,22 @@ Speech SSL Models with Attention Map Reusing and Masking Distillation**](https:/
 - **Masking Distillation**: Masking distillation treating masked frames and unmasked frames separately
 - Parameters and MACs of ARMHuBERT have decreased to **28% and 30%** of the teacher, HuBERT Base, respectively.
 - ARMHuBERT achieves **PER of 7.72%, WER of 9.96%** on the SUPERB benchmark in an E2E distillation manner.
+- Check out our model's performance in [SUPERB Leaderboard](https://superbbenchmark.org/leaderboard)! 
 
 
-### ✅ Checkpoints
-For our model's checkpoints, go check this [link](https://kaistackr-my.sharepoint.com/:f:/g/personal/dnrrkdwkd12_kaist_ac_kr/EpL0YsQg__RJlmsq__Y4UZIBtXuORYXLyAhUX3bK69e8DA?e=EAIEWP)!
+### 🤗 Checkpoints
+For our model's checkpoints, go check this [link](https://huggingface.co/sungnyun/ARMHuBERT)!
 
-| Model name       | Parameters | Teacher | Training dataset |
-|------------------|------------|---------|------------------|
-| ARMHuBERT-S-100h | 22.39M     | HuBERT  | LibriSpeech-100h |
-| ARMwavLM-S-100h  | 22.39M     | wavLM   | LibriSpeech-100h |
-| ARMHuBERT-S-960h | 22.39M     | HuBERT  | LibriSpeech-960h |
-| ARMwavLM-S-960h  | 22.39M     | wavLM   | LibriSpeech-960h |
-| MaskHuBERT-960h  | 26.64M     | HuBERT  | LibriSpeech-960h |
-| ARMHuBERT-960h   | 26.45M     | HuBERT  | LibriSpeech-960h |
+| Model name       | Parameters | Teacher | Training dataset | Link |
+|------------------|------------|---------|------------------| ---- |
+| ARMHuBERT-S-100h | 22.39M     | HuBERT  | LibriSpeech-100h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMHuBERT-S-100h.ckpt) |
+| ARMwavLM-S-100h  | 22.39M     | wavLM   | LibriSpeech-100h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMwavLM-S-100h.ckpt) |
+| ARMHuBERT-S-960h | 22.39M     | HuBERT  | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMHuBERT-S-960h.ckpt) |
+| ARMwavLM-S-960h  | 22.39M     | wavLM   | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMwavLM-S-960h.ckpt) |
+| MaskHuBERT-960h  | 26.64M     | HuBERT  | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/MaskHuBERT-960h.ckpt) |
+| ARMHuBERT-960h   | 26.45M     | HuBERT  | LibriSpeech-960h | [HF Model](https://huggingface.co/sungnyun/ARMHuBERT/blob/main/ARMHuBERT-960h.ckpt) |
 
+<br>
 
 # How to use this repo
 
