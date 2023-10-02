@@ -26,7 +26,7 @@ Speech SSL Models with Attention Map Reusing and Masking Distillation**](https:/
 
 
 ### 🤗 Checkpoints
-For our model's checkpoints, go check this [link](https://huggingface.co/sungnyun/ARMHuBERT)!
+For our model's checkpoints, go check this [link](https://huggingface.co/sungnyun/ARMHuBERT/tree/main)!
 
 | Model name       | Parameters | Teacher | Training dataset | Link |
 |------------------|------------|---------|------------------| ---- |
@@ -79,7 +79,7 @@ After training, the model checkpoints and the corresponding configuration file w
 
 
 ## Fine-tuning
-0. If you don't feel like training your model, feel free to use our [checkpoints](https://kaistackr-my.sharepoint.com/:f:/g/personal/dnrrkdwkd12_kaist_ac_kr/EpL0YsQg__RJlmsq__Y4UZIBtXuORYXLyAhUX3bK69e8DA?e=EAIEWP).
+0. If you don't feel like training your model, feel free to use our [checkpoints](https://huggingface.co/sungnyun/ARMHuBERT/tree/main).
    
 2. Clone and install the [S3PRL toolkit](https://github.com/s3prl/s3prl) with ```pip install -e ".[all]"``` (dev mode).
 
