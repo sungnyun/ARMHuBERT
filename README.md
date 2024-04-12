@@ -22,7 +22,9 @@ Speech SSL Models with Attention Map Reusing and Masking Distillation**](https:/
 - **Masking Distillation**: Masking distillation treating masked frames and unmasked frames separately
 - Parameters and MACs of ARMHuBERT have decreased to **28% and 30%** of the teacher, HuBERT Base, respectively.
 - ARMHuBERT achieves **PER of 7.72%, WER of 9.96%** on the SUPERB benchmark in an E2E distillation manner.
-- Check out our model's performance in [SUPERB Leaderboard](https://superbbenchmark.org/leaderboard)! 
+
+📌 Check out our model's performance in [SUPERB Leaderboard](https://superbbenchmark.org/leaderboard)!    
+📌 Update (Apr 12, 2024): also check our new paper [STaR](https://arxiv.org/abs/2312.09040) presented in ICASSP 2024 (**Best Student Paper**)!
 
 
 ### 🤗 Checkpoints
