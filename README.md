@@ -235,7 +235,7 @@ If you find this repo useful for your research, please consider citing our paper
 @inproceedings{jang2024star,
   title={STaR: Distilling Speech Temporal Relation for Lightweight Speech Self-Supervised Learning Models},
   author={Jang, Kangwook and Kim, Sungnyun and Kim, Hoirin},
-  booktitle={Proc. ICASSP 2024},
+  booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   pages={10721--10725},
   year={2024},
   organization={IEEE}
