@@ -155,9 +155,8 @@ If you find this repo useful for your research, please consider citing our paper
 <a href='https://arxiv.org/abs/2312.09040'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>  <a href=#bibtex><img src='https://img.shields.io/badge/Paper-BibTex-Green'></a> 
 <a href='https://superbbenchmark.org/leaderboard'><img src='https://img.shields.io/badge/SUPERB-Leaderboard-yellow'></a>
 
-<br>
 📌 Update (Apr 12, 2024): Our paper is selected as a (**Best Student Paper**) in ICASSP 2024!
-
+<br>
 📌 Check out our model's performance in [SUPERB Leaderboard](https://superbbenchmark.org/leaderboard)! 
 
 <p align="center">
