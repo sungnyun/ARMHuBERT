@@ -151,13 +151,13 @@ If you find this repo useful for your research, please consider citing our paper
 
 <br>
 
-# ♽ STaR (ICASSP 2024)  
+# 🌟 STaR (ICASSP 2024)  
 <a href='https://arxiv.org/abs/2312.09040'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>  <a href=#bibtex><img src='https://img.shields.io/badge/Paper-BibTex-Green'></a> 
 <a href='https://superbbenchmark.org/leaderboard'><img src='https://img.shields.io/badge/SUPERB-Leaderboard-yellow'></a>
 
-📌 Update (Apr 12, 2024): Our paper is selected as a (**Best Student Paper**) in ICASSP 2024!
+🎉 Update (Apr 12, 2024): Our new paper, STaR, has been selected as **Best Student Paper** in ICASSP 2024!
 <br>
-📌 Check out our model's performance in [SUPERB Leaderboard](https://superbbenchmark.org/leaderboard)! 
+🎉 Check out our model's performance in [SUPERB Leaderboard](https://superbbenchmark.org/leaderboard)! 
 
 <p align="center">
 <img width="1400" alt="model" src="./assets/model_star.png">
@@ -170,7 +170,7 @@ If you find this repo useful for your research, please consider citing our paper
 [Hoirin Kim](https://scholar.google.com/citations?user=naLHjOsAAAAJ&hl=en)<br/>
 
 - **<U>S</U>peech <U>T</U>empor<U>a</U>l <U>R</U>elation (STaR)**: Distill the knowledge by focusing on the pairwise **temporal relation** between two speech frames.
-- **Temporal Gram Matirx**: Propose temporal Gram matrix (TGM) which aggregates channel information at two time steps.
+- **Temporal Gram Matrix (TGM)**: Propose Temporal Gram Matrix which aggregates channel information at two time steps.
   - Layer-wise TGM: Distill the TGM for every Transformer layer
   - Intra-layer TGM: Modify the TGM as computing the temporal relation between the input and output of a single Transformer layer.
 - Incorporating two TGMs as the distillation objectives together, our student model STaRHuBERT (22M & 26M) shows the SOTA performance on the SUPERB benchmark with the metric of overall and generalizability scores.
@@ -194,8 +194,8 @@ For our model's checkpoints, please check the following links. All models are di
 - STaRHuBERT-XS (9.39M): [ckpt](https://drive.google.com/file/d/1sUpbDupbDtlCvN-49TblUn8GDmhV8MT8/view?usp=drive_link), [yaml](https://drive.google.com/file/d/1OFjIo1UjxNrxEboKaT8Z-vtuL6xmyNsu/view?usp=drive_link)
 
 ## Distillation
-We do not offer an official implementation code for distillation.
-Since STaRHuBERT is developed with the backbone of ARMHuBERT repository, you can implement our apporach with ARMHuBERT repository.
+We do not offer an official implementation code for distillation. 
+Nevertheless, since STaRHuBERT is developed upon the backbone of ARMHuBERT, you can easily re-implement our apporach with this ARMHuBERT repository.
 
 
 ## Fine-tuning
@@ -243,5 +243,6 @@ If you find this repo useful for your research, please consider citing our paper
 ```
 
 ## Contact
+For any details or clarification, please reach out to
 - Kangwook Jang: dnrrkdwkd12@kaist.ac.kr
 - Sungnyun Kim: ksn4397@kaist.ac.kr
