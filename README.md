@@ -149,13 +149,13 @@ If you find this repo useful for your research, please consider citing our paper
 }
 ```
 
+<br>
 
 # ♽ STaR (ICASSP 2024)  
 <a href='https://arxiv.org/abs/2312.09040'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>  <a href=#bibtex><img src='https://img.shields.io/badge/Paper-BibTex-Green'></a> 
 <a href='https://superbbenchmark.org/leaderboard'><img src='https://img.shields.io/badge/SUPERB-Leaderboard-yellow'></a>
 
 <br>
-
 📌 Update (Apr 12, 2024): Our paper is selected as a (**Best Student Paper**) in ICASSP 2024!
 
 📌 Check out our model's performance in [SUPERB Leaderboard](https://superbbenchmark.org/leaderboard)! 
@@ -175,7 +175,7 @@ If you find this repo useful for your research, please consider citing our paper
   - Layer-wise TGM: Distill the TGM for every Transformer layer
   - Intra-layer TGM: Modify the TGM as computing the temporal relation between the input and output of a single Transformer layer.
 - Incorporating two TGMs as the distillation objectives together, our student model STaRHuBERT (22M & 26M) shows the SOTA performance on the SUPERB benchmark with the metric of overall and generalizability scores.
-- For further compression (9.5M & 15M), our approach shows the robust performance against degradation compares to other works.
+- For further compression (9.39M & 14.1M), our approach shows the robust performance against degradation compares to other works.
 
 <p align="center">
 <img width="1400" alt="model" src="./assets/result_star.png">
