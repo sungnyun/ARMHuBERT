@@ -193,6 +193,9 @@ For our model's checkpoints, please check the following links. All models are di
 - STaRHuBERT-S (14.1M): [ckpt](https://drive.google.com/file/d/1sUpbDupbDtlCvN-49TblUn8GDmhV8MT8/view?usp=drive_link), [yaml](https://drive.google.com/file/d/1OFjIo1UjxNrxEboKaT8Z-vtuL6xmyNsu/view?usp=drive_link)
 - STaRHuBERT-XS (9.39M): [ckpt](https://drive.google.com/file/d/1sUpbDupbDtlCvN-49TblUn8GDmhV8MT8/view?usp=drive_link), [yaml](https://drive.google.com/file/d/1OFjIo1UjxNrxEboKaT8Z-vtuL6xmyNsu/view?usp=drive_link)
 
+We also add the model distilled from WavLM base models!
+- STaRWavLM (22.3M): [ckpt](https://drive.google.com/file/d/1gWq55o0HfarwgfRpY_2ncmr7jfhtIKR-/view?usp=drive_link), [yaml](https://drive.google.com/file/d/1p79PqwbEarBDm2X7k2DEbsN_lE3pgqki/view?usp=drive_link)
+
 ## Distillation
 We do not offer an official implementation code for distillation. 
 Nevertheless, since STaRHuBERT is developed upon the backbone of ARMHuBERT, you can easily re-implement our apporach with this ARMHuBERT repository.
